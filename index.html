@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site de Déménagement</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Bienvenue sur notre site de déménagement</h1>
+        <nav>
+            <ul>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#calculateur">Calculateur</a></li>
+                <li><a href="#guide">Guide</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="services">
+        <h2>Nos Services</h2>
+        <p>Description des services proposés.</p>
+    </section>
+    
+    <section id="calculateur">
+        <h2>Calculateur de Volume</h2>
+        <label for="items">Nombre d'objets :</label>
+        <input type="number" id="items" name="items" min="1">
+        <button onclick="calculateVolume()">Calculer</button>
+        <p id="result"></p>
+    </section>
+    
+    <section id="guide">
+        <h2>Guide de Déménagement</h2>
+        <p>Conseils et checklists pour un déménagement réussi.</p>
+    </section>
+    
+    <section id="contact">
+        <h2>Contact</h2>
+        <form id="contactForm">
+            <label for="name">Nom :</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email :</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">Message :</label>
+            <textarea id="message" name="message" required></textarea>
+            
+            <button type="submit">Envoyer</button>
+        </form>
+    </section>
+    
+    <footer>
+        <p>&copy; 2024 Site de Déménagement. Tous droits réservés.</p>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
